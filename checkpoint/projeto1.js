@@ -1,4 +1,4 @@
-const pratos = {
+const opcao = {
   1: { nome: "Pipoca", tempo: 10 },
   2: { nome: "Macarrão", tempo: 8 },
   3: { nome: "Carne", tempo: 15 },
@@ -7,13 +7,15 @@ const pratos = {
 };
 
 function microondas(numeroPrato, tempo) {
-  const prato = pratos[numeroPrato];
+  const prato = opcao[numeroPrato];
 
   if (!prato) {
-    return console.log("Prato inexistente");
+    return console.log(
+      "Essa opção nâo existe, escolha uma das opções disponíveis!"
+    );
   }
 
-  let mensagem;
+  let mensagem = "";
   const tempoPadrao = prato.tempo;
 
   if (tempo < tempoPadrao) {
@@ -24,8 +26,8 @@ function microondas(numeroPrato, tempo) {
     mensagem = "Kabummm";
   }
 
-    console.log("BIP,BIP !!!");
-    return console.log(mensagem);
+  console.log("BIP,BIP !!!");
+  return console.log(mensagem);
 }
 
-microondas(1, 17);
+microondas(6, 17);
