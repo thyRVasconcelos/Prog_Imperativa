@@ -3,7 +3,7 @@ const opcao = {
   2: { nome: "Macarrão", tempo: 8 },
   3: { nome: "Carne", tempo: 15 },
   4: { nome: "Feijão", tempo: 12 },
-  5: { nome: "Brigadeiro", tempo: 8 },
+  5: { nome: "Brigadeiro", tempo: 8 }
 };
 
 function microondas(numeroPrato, tempo) {
@@ -30,4 +30,4 @@ function microondas(numeroPrato, tempo) {
   return console.log(mensagem);
 }
 
-microondas(6, 17);
+microondas(5, 16);
