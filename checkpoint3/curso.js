@@ -2,7 +2,7 @@ const addCadastro = require("./moduloaluno");
 const listaAlunos = require("./listaalunos");
 
 const curso = {
-  nomeCurso: "CTD",
+  nomeCurso: "ProgImperativa",
   notaAprovacao: 7,
   faltaMaxima: 5,
   listaEstudantes: listaAlunos,
